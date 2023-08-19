@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/9b197449cc.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
+  .container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ccc;
+  }
+  .container .box{
+    width: 700px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    height: 274px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 5px 10px #000700;
+    background: #2c3e50;
+  }
+  .container .box .image{
+    text-align: center;
+    width: 260px;
+    background: rgb(6, 6, 49);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 0,80% 0,100% 15%,100% 85%,76% 100%,0 100%);
+  }
+  .container .box .image img{
+    height: 150px;
+    width: 150px;
+    box-shadow: 0 0 0 10px coral;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .container .box .content{
+    display: flex;
+   margin: 0 20px;
+   align-items: center;
+  }
+  .container .box .content .icons{
+    background-color: #fff;
+    border-radius: 50px;
+  }
+  .container .box .content .icons i{
+    display: block;
+    margin: 10px 13px;
+    font-size: 20px;
+    color: coral;
+  }
+  .container .box .content .icons i:first-child{
+    margin-bottom: 70px;
+  }
+  .container .box .content .info {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container .box .content .info .title{
+     font-size: 20px;
+     color: #fff;
+     text-transform: capitalize;
+  }
+  .container .box .content .info .title span{
+    color: coral;
+  }
+  .container .box .content .info .post{
+    display: block;
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 48px;
+    margin-top: 3px;
+  }
+  .container .box .content .info a{
+    display: block;
+   padding: 6px 0;
+    color: #ccc;
+  }
+  .container .box .content .info a:hover{
+    color: #fff;
+  }
+  .container .box  .share{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    height: 274px;
+    margin-left: auto;
+    padding: 0 7px;
+  }
+  .container .box  .share a{
+      color: #aaa;
+      font-size: 23px;
+      margin: 10px;
+  }
+  .container .box  .share a:hover{
+    color: coral;
+  }
+  @media (max-width:650px){
+  
+    .container .box{
+       width:340px;
+       flex-direction: column;
+       height: 520px;
+      justify-content: space-between;
+  
+   
+    }
+    .container .box .image{
+      height: 200px;
+      width: 100%;
+      clip-path: polygon(0 0,100% 0,100% 70%,80% 100%,20% 100%,0 70%);
+      padding: 40px 0;
+    }
+    .container .box .image img{
+      height: 120px;
+      width: 120px;
+    }
+    .container .box .content{
+      padding: 30px 5px;
+    }
+    .container .box .share {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    height: 78px;
+    margin-left: 0;
+    padding: 0px 7px;
+    width: 100%;
+}
+    }
+</style>
+<body>
+  <h1 style="position: absolute;top: 20px;"> HTML Email <span style="color: coral;"> Signature
+  </span></h1>
+  <div class="container">
+    <div class="box">
+      <div class="image">
+        <img src="./my.jpg" alt="My Photo" title="My Photo">
+      </div>
+      <div class="content">
+        <div class="icons">
+          <i class="fa-solid fa-user"></i>
+          <i class="fa-solid fa-phone"></i>
+          <i class="fa-solid fa-globe"></i>
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="info">
+           <h3 class="title">Malik <span>Bilal</span></h3>
+           <span class="post">Web Developer</span>
+           <a href="#">+923156531031</a>
+           <a href="#">www.dummydata.com</a>
+           <a href="#">malikbilalbf7@gmail.com</a>
+        </div>
+        <!-- <div class="share">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div> -->
+      </div>
+      <div class="share">
+        <a href="#" class="fa-brands fa-facebook-f"></a>
+        <a href="#" class="fa-brands fa-twitter"></a>
+        <a href="#" class="fa-brands fa-instagram"></a>
+        <a href="#" class="fa-brands fa-github"></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
